@@ -1,13 +1,23 @@
+:root {
+  --canopy-green: #96BAA0;
+  --meadow-mist: #BDD4DA;
+  --sky-bloom: #F0C06D;
+  --sunlit-petal: #F7F7F7;
+  --cloudy-gray: #CCCCCC;
+  --detritus-green: #00231C;
+}
+
 body {
-  background-color: #C6E2CE;
-  font-family: 'Lato', sans-serif;
+  background-color: var(--meadow-mist);
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--detritus-green);
 }
 
 header {
-  background-color: #f0c06d;
-  color: white;
+  background-color: var(--sky-bloom);
+  color: var(--sunlit-petal);
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -16,8 +26,8 @@ header {
 }
 
 footer {
-  background-color: #8bc34a;
-  color: white;
+  background-color: var(--canopy-green);
+  color: var(--sunlit-petal);
   padding: 15px;
   text-align: center;
 }
@@ -33,12 +43,52 @@ main {
   padding: 20px;
 }
 
-h1, h2 {
-  font-family: 'Playfair Display', serif;
+h1 {
+  font-family: "Courier New", monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.body-large {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.body-strong {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.caption {
+  font-family: Calibri, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
 }
 
 .body-container {
@@ -161,7 +211,7 @@ body nav a:hover {
 }
 
 .sidebar a {
-  color: #002023;
+  color: var(--detritus-green);
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
@@ -170,8 +220,8 @@ body nav a:hover {
 }
 
 .sidebar a:hover {
-  background-color: rgba(0,0,0,0.1);
-  color: #002023;
+  background-color: transparent;
+  color: var(--detritus-green);
   border-radius: 5px;
 }
 
